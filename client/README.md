@@ -54,9 +54,9 @@ Além disto é bom ter um editor para trabalhar com o código como [VSCode](http
 # Clone este repositório
 $ git clone <https://github.com/jhony2488/desafio-app-tasks>
 # Acesse a pasta do projeto no terminal/cmd
-$ cd client
+$ cd desafio-app-tasks
 # Acesse a pasta do projeto no terminal/cmd
-$ cd desafio-react
+$ cd client
 # Instale as dependências
 $ npm install || yarn install
 ```

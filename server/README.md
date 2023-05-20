@@ -1,8 +1,6 @@
-<h1 align="center" id="vuttr">
-   VUTTR
+<h1 align="center" id="app-tarefas">
+   App tarefas Back End
 </h1>
-
-<p align="center">🚀 VUTTR é um simples repositório para gerenciar ferramentas com seus respectivos nomes, links, descrições e tags</p>
 
 <h2 id="tabela-de-conteudo">Tabela de conteúdos</h2>
 <!--ts-->
@@ -34,51 +32,52 @@
 - [Licença](#licença)
 <!--te-->
 
-<h2  id="status-projeto">  
-	🚧  VUTTR Back End 🚀 Concluido
-</h2>
-
 <h2  id="features">  
   Features
 </h2>
 
 - [x] Desenvolver e realizar os testes
-- [x] Cadastro de usuário
-- [x] Pegar dados de um unico usuario
-- [x] Alterar dados de usuário
-- [x] Deletar usuário
-- [x] Cadastro de Ferramentas
-- [x] Pegar dados das ferramentas de um unico usuario
-- [x] Alterar dados das ferramentas de um unico usuario
-- [x] Deletar dados das ferramentas de um unico usuario
-- [x] Cadastro de Tags
-- [x] Pegar dados das tags
-- [x] Alterar dados das tags
-- [x] Deletar tags
-- [x] cadastro de usuario administrador
-- [x] Admninistrador pegar dados de um unico usuario
-- [x] Admninistrador pegar dados de todos os usuarios
+- [x] Cadastro de tarefa
+- [x] Pegar dados de tarefas e de uma unica tarefa
+- [x] Alterar dados de uma tarefa
+- [x] Deletar uma tarefa
 
 <h2>Como usar</h2>
 
 <h3>Pré-requisitos</h3>
 
 Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
-[Git](https://git-scm.com), [Node.js](https://nodejs.org/en/), [MySQL](https://www.mysql.com/).
+[Git](https://git-scm.com), [Node.js](https://nodejs.org/en/), [MySQL](https://www.mysql.com/),[Docker](https://hub.docker.com/).
 Além disto é bom ter um editor para trabalhar com o código como [VSCode](https://code.visualstudio.com/)
 
 <h3 id="instalacao">Instalação</h3>
 
 ```bash
 # Clone este repositório
-$ git clone <https://github.com/jhony2488/API-NODE-VUTTR-Very-Useful-Tools-to-Remember>
-
+$ git clone <https://github.com/jhony2488/desafio-app-tasks>
 # Acesse a pasta do projeto no terminal/cmd
-$ cd API-NODE-VUTTR-Very-Useful-Tools-to-Remember
-
+$ cd desafio-app-tasks
+# Acesse a pasta do projeto no terminal/cmd
+$ cd server
 # Instale as dependências
-$ npm install || yarn add
+$ npm install || yarn install
+```
 
+<h3 id="rodando-api">🎲 Rodando a API em modo de desenvolvimento com docker</h3>
+
+#### Instale o Node.js atravez do link abaixo caso ainda não o tenha instalado
+
+- [https://nodejs.org/en/download/](https://nodejs.org/en/download/)
+
+#### Instale o Docker atravez do link abaixo caso ainda não o tenha instalado
+
+- [https://hub.docker.com/](https://hub.docker.com/)
+
+```bash
+# Execute o mysql no seu terminal/CMD
+$  docker-compose up -d
+
+# O servidor inciará na porta:80 - acesse <http://localhost:80>
 ```
 
 <h3 id="rodando-api">🎲 Rodando a API em modo de desenvolvimentor</h3>
@@ -101,7 +100,7 @@ $ CREATE DATABASE vuttr_development;
 # Execute a aplicação em modo de desenvolvimento
 $ npm run dev || yarn dev
 
-# O servidor inciará na porta:3000 - acesse <http://localhost:3000>
+# O servidor inciará na porta:80 - acesse <http://localhost:80>
 ```
 
 <h3 id="rodando-api">🎲 Rodando a API em modo de produção </h3>
@@ -127,7 +126,7 @@ $ npm run build || yarn build
 # Execute a aplicação em modo de desenvolvimento
 $ npm run start || yarn start
 
-# O servidor inciará na porta:3000 - acesse <http://localhost:3000>
+# O servidor inciará na porta:80 - acesse <http://localhost:80>
 ```
 
 <h2 id="tests">🛠 Testes</h2>
@@ -163,12 +162,12 @@ $ npm run test-stress || yarn test-stress
 #  Executar o build da documentação caso ja esteja com a aplicação rodando com o docker , basta apenas acessar a URL abaixo
 $ npm run documentation || yarn documentation
 
-# O servidor inciará na porta:3000 - acesse a documentação <http://localhost:3000/documentation/>
+# O servidor inciará na porta:80 - acesse a documentação <http://localhost:80/documentation/>
 ```
 
 ### Acesse a documentação da localmente
 
-- [http://localhost:3000/documentation/](http://localhost:3000/documentation/)
+- [http://localhost:80/documentation/](http://localhost:80/documentation/)
 
 <h2 id="tecnologias">🛠 Tecnologias</h2>
 
@@ -185,27 +184,3 @@ As seguintes ferramentas foram usadas na construção do projeto:
 - [Prettier](https://prettier.io/)
 - [MySQL](https://www.mysql.com/)
 
-<h2 id="autor" align="center">Autor</h2>
-
-<div align="center">
-
-<a href="https://jhonyaraujo.netlify.app/">
- <img style="border-radius: 50%;" src="https://raw.githubusercontent.com/jhony2488/images/master/perfil.jpg" width="200px;" alt="Jhonata Vinicius"/>
- <br />
- <h2>Jhonata Vinicius Da Silva Araujo(Jhony Araujo) </h2></a>
-
-<p>Feito por Jhonata Vinicius 👋🏽 Entre em contato!</p>
-
-<a href="https://twitter.com/JhonyAraujoDev" align="center"><img src="https://raw.githubusercontent.com/jhony2488/images/master/twitter.png" height="60px" width="60px" /></a>
-<a href="https://www.linkedin.com/in/jhonatavinicius2488/"><img src="https://raw.githubusercontent.com/jhony2488/images/master/linkedin.png" style="margin-left:10px;" height="60px" width="60px" /></a>
-<a href="https://join.skype.com/invite/v9azzgZrhpWh"><img src="https://raw.githubusercontent.com/jhony2488/images/master/skype%20(1).png" height="60px" width="60px" /></a>
-<a href="https://www.facebook.com/jhony.araujo.dev/"><img src="https://raw.githubusercontent.com/jhony2488/images/master/facebook%20(1).png" height="60px" width="60px" /></a>
-<a href="https://www.instagram.com/jhonyaraujo_oficial/"><img src="https://raw.githubusercontent.com/jhony2488/images/master/instagram.png" height="60px" width="60px" /></a>
-<a href="https://api.whatsapp.com/send?phone=5581983708177"><img src="https://raw.githubusercontent.com/jhony2488/images/master/whatsapp.png" height="60px" width="60px" /></a>
-<a href="https://www.behance.net/jhonyaraujo"><img src="https://raw.githubusercontent.com/jhony2488/images/master/behance.png" height="60px" width="60px" /></a>
-
-</div>
-
-<h2 id="licenca">Licença</h2>
-
-<a href="https://github.com/jhony2488/API-NODE-VUTTR-Very-Useful-Tools-to-Remember/blob/master/LICENSE" align="center">GNU GENERAL PUBLIC LICENSE</a>
