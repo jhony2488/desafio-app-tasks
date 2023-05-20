@@ -19,6 +19,7 @@ export default function InputContainer({ handleSubmitTask }: Props) {
 
     const handleSubmit = (): void => {
         handleSubmitTask(valueInput);
+        setValueInput('');
     };
 
     return (

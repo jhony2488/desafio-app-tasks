@@ -10,6 +10,7 @@ export const searchStyles = makeStyles((theme: Theme) => {
             marginTop: '20px',
             display: 'grid',
             'justify-items': 'center',
+            paddingBottom: '30px'
         },
         card: {
             marginTop: '16px',
