@@ -1,10 +1,9 @@
 
 import { Request, Response } from 'express'
-import Prospect from '../../../models/Tasks'
+import Task from '../../../models/Tasks'
 
 async function DeleteProspects(req: Request, res: Response) {
   const { id } = req.params;
-  const tasks: any= Prospect;
   // #swagger.tags = ['Tasks']
   // #swagger.description = 'Endpoint para deletar uma task'
   /*    #swagger.parameters['body'] = {
@@ -20,7 +19,7 @@ async function DeleteProspects(req: Request, res: Response) {
         } */
 
   try {
-    await tasks.destroy({
+    await Task.destroy({
       where: {
         id
       }

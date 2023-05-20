@@ -25,4 +25,4 @@ async function index(req: Request, res: Response) {
   }
 }
 
-export default index
+export default index;

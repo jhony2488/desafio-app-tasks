@@ -1,5 +1,5 @@
 import { Request, Response } from 'express'
-import Prospect from '../../../models/Tasks'
+import Task from '../../../models/Tasks'
 
 async function SetTasks(req: Request, res: Response) {
   const {
@@ -8,8 +8,7 @@ async function SetTasks(req: Request, res: Response) {
   }: {
     title: string
     completed: boolean
-  } = req.body
-  const tasks: any = Prospect
+  } = req.body;
   // #swagger.tags = ['setTasks']
   // #swagger.description = 'Endpoint para criar uma nova task'
   /*    #swagger.parameters['body'] = {
@@ -25,24 +24,24 @@ async function SetTasks(req: Request, res: Response) {
         } */
 
   try {
-    await tasks.create({
+    await Task.create({
       title,
       completed
-    })
+    });
     /* #swagger.responses[200] = {
                schema: { $ref: "#/definitions/SendMailResponse" },
                description: 'Enviar email'
         } */
     return res.json({
       message: 'Tarefa criada com sucesso',
-    })
+    });
   } catch (err) {
     /* #swagger.responses[400] = {
                schema: { $ref: "#/definitions/Error400" },
                description: 'Quando houver um erro na requisição'
         } */
-    return res.status(400).json({ message: err.message })
+    return res.status(400).json({ message: err.message });
   }
 }
 
-export default SetTasks
+export default SetTasks;

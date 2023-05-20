@@ -7,7 +7,7 @@ export const mockedTasks: PropsTask[] = [
 ];
 
 export const mockedTasksSeeders: PropsTask[] = [
-  { title: 'Aprender React', completed: true },
-  { title: 'Estudar NodeJS', completed: false },
-  { title: 'Praticar TypeScript', completed: false },
+  { title: 'Aprender React',  },
+  { title: 'Estudar NodeJS',  },
+  { title: 'Praticar TypeScript', },
 ];

@@ -1,10 +1,9 @@
 
 import { Request, Response } from 'express';
-import Tasks  from "../../../models/Tasks";
+import Task  from "../../../models/Tasks";
 
 async function getTasks(req: Request, res: Response){
   const { id } = req.query;
-  const tasks: any= Tasks;
     // #swagger.tags = ['Tasks']
     // #swagger.description = 'Endpoint para obter dados de tasks'
 
@@ -14,7 +13,7 @@ async function getTasks(req: Request, res: Response){
         } */
 
     try {
-      const result = await id ? tasks.findOne({where: {id}}): tasks.findAll();
+      const result = await id ? Task.findOne({where: {id}}): Task.findAll();
       /* #swagger.responses[200] = {
                schema: { $ref: "#/definitions/SendMailResponse" },
                description: 'Obtido as tasks'
@@ -27,7 +26,7 @@ async function getTasks(req: Request, res: Response){
                schema: { $ref: "#/definitions/Error400" },
                description: 'Quando houver um erro na requisição'
         } */
-      return res.status(400).json({ message: err.message });
+      return res.status(400).json({ message: err.message});
     }
   }
 

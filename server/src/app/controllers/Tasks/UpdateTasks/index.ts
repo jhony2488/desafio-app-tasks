@@ -1,6 +1,6 @@
 
 import { Request, Response } from 'express';
-import Prospect from '../../../models/Tasks';
+import Task from '../../../models/Tasks';
 
 async function UpdatePropects(req: Request, res: Response) {
   const { id } = req.params;
@@ -11,7 +11,6 @@ async function UpdatePropects(req: Request, res: Response) {
     title: string
     completed: boolean
   } = req.body;
-  const prospects: any = Prospect;
   const getId=typeof id === 'string' ? parseInt(id) : id;
   // #swagger.tags = ['Tasks']
   // #swagger.description = 'Endpoint para atualizar dados de uma task'
@@ -28,7 +27,7 @@ async function UpdatePropects(req: Request, res: Response) {
         } */
 
   try {
-    await prospects.update(
+    await Task.update(
       {
         title,
         completed,
