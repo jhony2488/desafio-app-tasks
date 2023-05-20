@@ -1,5 +1,5 @@
 <h1 align="center" id="">
-   App de tarefas Front End
+   App de tarefas 
 </h1>
 
 - [Front End](https://github.com/jhony2488/desafio-app-tasks/blob/master/client/README.md)
