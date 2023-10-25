@@ -38,6 +38,10 @@ const doc = {
     DefaultIndex: {
       version,
     },
+
+    getTask: {
+      version,
+    },
   },
 }
 

@@ -11,6 +11,10 @@
     {
       "name": "Default",
       "description": "Endpoints of default endpoints"
+    },
+    {
+      "name": "Tasks",
+      "description": "Endpoints tasks"
     }
   ],
   "schemes": [
